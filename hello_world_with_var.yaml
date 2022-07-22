@@ -2,7 +2,8 @@
   hosts: all
   vars: 
     guestName: "World"
+    greeting: "Hello"
   tasks:
     - name: Hello Message
       debug:
-        msg: "Hello {{ guestName }}!"
+        msg: "{{ greeting }}, {{ guestName }}!"
